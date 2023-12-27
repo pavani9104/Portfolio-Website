@@ -327,7 +327,7 @@ footer li a {
     #name{
         padding-top: 5px;
         height: 30px;
-        width: 300px;
+        width: 100px;
     }
     .toggle {
         display: flex;
