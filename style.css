@@ -9,7 +9,7 @@ body {
 }
 
 .main {
-    margin-top: 80px; /* Adjusted margin for the fixed navbar */
+    margin-top: 80px;
 }
 
 .nav_bar {
@@ -23,13 +23,12 @@ body {
 
 .nav_bar ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
 }
 
 .nav_bar li {
-    padding: 0 20px;
     list-style: none;
 }
 
@@ -281,4 +280,91 @@ footer li a {
 #github {
     height: 30px;
     width: 30px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .nav_bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_bar li {
+        padding: 15px 0;
+    }
+
+    .box {
+        margin: 30px auto;
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .nav_bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_bar li {
+        padding: 10px 0;
+    }
+
+    .box {
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .t1 {
+        font-size: 30px;
+    }
+
+    .t2 {
+        font-size: 20px;
+    }
+
+    .t3 {
+        font-size: 30px;
+    }
+
+    #greet {
+        padding-left: 0;
+    }
+
+    #About {
+        font-size: 16px;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    #Achievements,
+    #ExtraCurriculars li,
+    #Projects,
+    #Projects h3,
+    #Projects h2,
+    #tech li,
+    #id2 h3,
+    .skill-name,
+    label,
+    input,
+    textarea,
+    button,
+    #contact,
+    #contact p,
+    #fcr {
+        font-size: 16px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    #fname {
+        font-size: 20px;
+    }
+
+    footer li a {
+        font-size: 16px;
+    }
 }
