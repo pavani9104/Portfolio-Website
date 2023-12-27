@@ -11,8 +11,20 @@
 <body>
     <div class="main">
         <nav class="nav_bar">
+            <img id="mname" src="my name.png" alt="Sunitha Pavani">
+            <a href="#"><img class="toggle"  src="button.png" alt="Toggle button"></a>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    var toggleButton = document.querySelector('.toggle');
+                    var navBar = document.querySelector('.nav_bar');
+            
+                    toggleButton.addEventListener('click', function () {
+                        navBar.classList.toggle('active');
+                    });
+                });
+            </script>
+            
             <ul>
-                <li id="name"><img src="my name.png" alt="Sunitha Pavani"></li>
                 <li><a href="#a" onclick="scrollToSection('id1')">About</a></li>
                 <li><a href="#a" onclick="scrollToSection('id2')">Skills</a></li>
                 <li><a href="#a" onclick="scrollToSection('id3')">Achievements</a></li>
@@ -71,6 +83,7 @@
                 the world of mathematics has driven me to pursue <b><i>a minor degree in Applied and Computational Mathematics.</i></b>
                 I find myself passionate about DSA. Additionally, I have been exploring web development and find it quite interesting ^_^. 
                 Explore my website to know more about me. It's a pleasure to connect with you :)</p>
+            <a id="res" href="Resume.pdf">View my resume</a>
         </div>
         <div class="box" id="id2">
             <h2 class="heading">Skills</h2>
@@ -149,6 +162,8 @@
                         <li>JavaScript</li>
                     </ul>
                 </div>
+                <p>You can view my project my clicking the button</p>
+                <a href="https://sunithapavani.github.io/Portfolio-Website/" target="_blank" >PROJECT</a>
             </div>
         </div>
         <div class="box" id="id5">
@@ -183,11 +198,11 @@
         <div id="fintro">
             <p id="fname">Obulapuram Sunitha Pavani</p>
                 <ul>
-                    <li><a href="#a" onclick="scrollToSection('id1')">About  |</a></li>
-                    <li><a href="#a" onclick="scrollToSection('id2')">Skills  |</a></li>
-                    <li><a href="#a" onclick="scrollToSection('id3')">Achievements  |</a></li>
-                    <li><a href="#a" onclick="scrollToSection('id4')">Projects  |</a></li>
-                    <li><a href="#a" onclick="scrollToSection('id5')">ExtraCurriculars  |</a></li>
+                    <li><a href="#a" onclick="scrollToSection('id1')">About</a></li>
+                    <li><a href="#a" onclick="scrollToSection('id2')">Skills</a></li>
+                    <li><a href="#a" onclick="scrollToSection('id3')">Achievements</a></li>
+                    <li><a href="#a" onclick="scrollToSection('id4')">Projects</a></li>
+                    <li><a href="#a" onclick="scrollToSection('id5')">ExtraCurriculars</a></li>
                     <li><a href="#a" onclick="scrollToSection('id6')">Contact</a></li>
                 </ul>
             <p id="fcr">Made with <span style="color: red;">&hearts;</span> by Sunitha Pavani</p>
