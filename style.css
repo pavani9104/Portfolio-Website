@@ -1,173 +1,176 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-.main{
-    margin-top: 70px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+
+body {
+    font-family: 'Poppins', sans-serif;
 }
+
+.main {
+    margin-top: 80px; /* Adjusted margin for the fixed navbar */
+}
+
 .nav_bar {
-    background-color: #179b4a; 
+    background-color: #179b4a;
     height: 80px;
     width: 100%;
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
 }
-#name{
-    padding-top: 15px;
-}
+
 .nav_bar ul {
-    float: right;
     display: flex;
-    overflow: hidden;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
 }
 
 .nav_bar li {
-    padding: 25px 40px;
+    padding: 0 20px;
     list-style: none;
 }
 
 .nav_bar a {
     text-decoration: none;
     color: white;
-    font-family: 'Poppins', sans-serif;
 }
 
 .nav_bar a:hover {
     color: #4b4a54;
-    transition: all 0.4s ease 0s;
+    transition: all 0.4s ease;
 }
-.main{
+
+.main {
     background-color: #d7fadb;
 }
+
 .box {
     background-color: #f3fcf4;
-    width: 900px;
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    margin: 50px 300px 50px 300px; 
-    padding: 20px; 
-    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.t1{
-    padding-left: 250px;
-    margin: 30px;
+
+.t1 {
+    text-align: center;
     font-size: 40px;
 }
-.t2{
-    margin: 15px;
+
+.t2 {
+    text-align: center;
     font-family: 'Candal', sans-serif;
     font-size: 25px;
     margin-top: 30px;
-    display: flex;
-    overflow: hidden;
 }
-#intro{
+
+#intro {
     padding-top: 40px;
-    padding-right: 20px;
 }
-.t3{
-    margin: 80px;
+
+.t3 {
+    text-align: center;
     font-size: 40px;
-    margin-left: 50px;
     font-family: 'Aleo', sans-serif;
 }
-#greet{
-    padding-left: 150px;
-    padding-bottom: 20px;
+
+#greet {
+    padding-top: 20px;
 }
-#About{
+
+#About {
     margin-top: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 28px;
-    line-height: 2;
+    font-size: 18px;
+    line-height: 1.5;
 }
-.heading{
-    display: inline;
-    margin: 20px 300px 50px 300px;
+
+.heading {
+    text-align: center;
     font-size: 40px;
     color: #2f4858;
+    margin: 20px 0;
 }
-b{
-    color:#3e5462
-}
-#Achievements{
+
+#Achievements {
     margin-top: 20px;
-    font-size: 30px;
-    line-height: 2;
-    padding-left: 20px;
-}
-#ExtraCurriculars li{
-    list-style-type: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 28px;
+    font-size: 18px;
     line-height: 1.5;
-    padding-left: 10px;
 }
-#ExtraCurriculars h2{
+
+#ExtraCurriculars li {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#ExtraCurriculars h2 {
     color: #127839;
-    font-size: 30px;
+    font-size: 20px;
 }
-#Projects{
-    font-size: 28px;
-    line-height: 2;
+
+#Projects {
+    font-size: 18px;
+    line-height: 1.5;
     margin-bottom: 20px;
 }
-#Projects h3{
+
+#Projects h3 {
     color: #0b4e25;
-    font-size: 28px;
-    padding-left: 40px;
+    font-size: 18px;
     padding-top: 25px;
 }
-#Projects h2{
+
+#Projects h2 {
     color: #127839;
-    font-size: 35px;
-    margin-left: 50px;
+    font-size: 25px;
+    margin-bottom: 10px;
 }
-#tech ul{
+
+#tech ul {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
 }
-#tech li{
-    margin: 30px;
-    margin-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px ;
+
+#tech li {
+    margin: 10px;
+    padding: 10px;
     border: 1px solid #3e5462;
     border-radius: 8px;
     background-color: #d7fadb;
 }
-#id2 h3{
-    margin-left: 60px;
+
+#id2 h3 {
+    text-align: center;
     color: rgb(134, 79, 11);
+    font-size: 18px;
     margin-top: 20px;
-    font-size: 28px;
 }
+
 .skills-bar {
     list-style: none;
     padding: 0;
-    margin: 30px;
+    margin: 20px 0;
 }
 
 .skills-bar li {
     margin-bottom: 20px;
-    display: flex;
-    align-items: center;
 }
 
 .skill-name {
-    width: 100px;
-    font-size: 25px;
+    width: 60px;
+    font-size: 18px;
 }
 
 .skill-bar {
     flex: 1;
-    height: 25px;
+    height: 15px;
     background-color: #ccc;
     margin-left: 10px;
     position: relative;
@@ -181,100 +184,101 @@ b{
 #id6 p {
     text-align: center;
     color: #164802;
-    font-size: 25px;
+    font-size: 18px;
     margin: 20px;
 }
 
 label {
     margin-top: 10px;
     color: #034d43;
-    font-size: 30px;
+    font-size: 18px;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
     margin-bottom: 15px;
     border: none;
-    font-size: 25px;
+    font-size: 18px;
     border-bottom: 1px solid #ccc;
-    background-color: #f3fcf4;
     outline: none;
 }
 
 button {
     background-color: #4caf50;
     color: #fff;
-    padding: 10px;
+    padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    margin-left: 400px;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 button:hover {
     background-color: #45a049;
 }
-footer{
+
+footer {
     color: rgb(3, 68, 62);
     background-color: #95c89d;
-    height: 250px;
-    display: flex;
+    padding: 20px;
+    text-align: center;
 }
-#fname{
-    font-size: 40px;
-    margin-top: 20px;
+
+#fname {
+    font-size: 24px;
     margin-bottom: 20px;
-    margin-left: 10px;
 }
-footer ul{
+
+footer ul {
     display: flex;
-    float: left;
-    margin-bottom: 50px;
+    justify-content: center;
+    margin-bottom: 20px;
 }
-footer li{
+
+footer li {
     list-style: none;
+    margin: 0 10px;
 }
-footer li a{
+
+footer li a {
     text-decoration: none;
     color: #1d5540;
-    font-size: 25px;
-    margin-left: 10px;
+    font-size: 18px;
 }
-#fcr{
-    margin-left: 10px;
-    margin-top: 50px;
-    font-size: 25px;
+
+#fcr {
+    font-size: 18px;
     color: rgb(82, 2, 52);
 }
-#contact{
-    margin-left: 250px;
-    margin-top: 40px;
-    font-size: 30px;
-    color:#64022e
+
+#contact {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #64022e;
 }
-#contact p{
+
+#contact p {
     margin-bottom: 20px;
-    margin-left: 10px;
 }
-#contact ul{
+
+#contact ul {
     display: flex;
+    justify-content: center;
 }
-#contact li{
+
+#contact li {
     padding: 20px;
 }
-#gmail{
-    height: 40px;
-    width: 45px;
-    padding-top: 5px;
-}
-#linkedin{
-    height: 50px;
-    width: 50px;
-}
-#github{
-    height: 45px;
-    width: 45px;
+
+#gmail,
+#linkedin,
+#github {
+    height: 30px;
+    width: 30px;
 }
