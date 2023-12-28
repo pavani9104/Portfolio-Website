@@ -13,11 +13,12 @@ body {
     padding-top: 30px;
 }
 
-#mname{
-    height: 50px;
-    width: 500px;
-    margin-right: 10px;
-    margin-top: 15px;
+#mname {
+    height: 30px;
+    width: 80%; 
+    max-width: 200px; /* Set a max-width if necessary */
+    margin-right: 10px; /* Adjust margin as needed */
+    margin-top: 25px;
 }
 .nav_bar {
     display: flex;
@@ -129,8 +130,11 @@ body {
     margin-top: 20px;
     font-size: 18px;
     line-height: 1.5;
+    margin-left: 10px;
 }
-
+#ExtraCurriculars{
+    margin-left: 20px;
+}
 #ExtraCurriculars li {
     margin-top: 20px;
     font-size: 18px;
@@ -164,7 +168,7 @@ body {
     margin-left: 100px;
 }
 #Projects a{
-    background-color: #d7fadb;
+    background-color: #ccc;
     border-radius: 8px;
     text-decoration: none;
     border: 2px solid #0b4e25;
@@ -318,27 +322,26 @@ footer li a {
 #gmail,
 #linkedin,
 #github {
-    height: 30px;
-    width: 30px;
+    height: 45px;
+    width: 45px;
 }
 
 /* Media Queries */
 @media only screen and (max-width: 768px) {
-    #name{
+    #mname {
         padding-top: 5px;
         height: 30px;
-        width: 100px;
+        width: 80%; /* Adjust the percentage as needed */
+        max-width: 200px; /* Set a max-width if necessary */
+        margin-right: 60px;
+        margin-top: 15px;
     }
-    .toggle {
-        display: flex;
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        width: 40px; 
-        height: 40px; 
+
+    .nav_bar {
+        width: 100%;
     }
     .t2 img{
-        width: 500px;
+        width: 100%;
     }
     .nav_bar ul {
         display: none;
@@ -353,25 +356,69 @@ footer li a {
         padding: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
+    
     .nav_bar li {
         list-style: none;
         margin 0;
         padding: 10px;
         border-bottom: 1px solid #4CAF50;
     }
+    
     .nav_bar a {
         text-decoration: none;
         color: #4b4a54;
         display: block;
+        width: 100%; /* Make each item full width */
+    }
+    
+    .toggle {
+        display: flex;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
     }
 
     .nav_bar a:hover {
         background-color: #d7fadb;
         transition: all 0.4s ease;
     }
-
+    .box {
+    width: 80%; /* Adjust the percentage as needed */
+    max-width: 600px; /* Set a max-width if necessary */
+    margin: 50px auto;
+    }
     .nav_bar.active ul {
         display: flex;
+    }
+    #res {
+        display: block;
+        background-color: #ccc;
+        padding: 10px;
+        border: 1px solid #0b4e25;
+        text-decoration: none;
+        border-radius: 8px;
+        margin: 20px auto; /* Center the link */
+        max-width: 200px; /* Set a max-width if necessary */
+        text-align: center;
+    }
+    #id4 p {
+        text-align: center;
+        max-width: 80%; /* Adjust the percentage as needed */
+        margin: 0 auto; /* Center the element */
+    }
+    
+    #id4 a {
+        display: block;
+        background-color: #ccc;
+        padding: 10px;
+        border: 1px solid #0b4e25;
+        text-decoration: none;
+        border-radius: 8px;
+        margin: 20px auto; /* Center the link */
+        max-width: 200px; /* Set a max-width if necessary */
+        text-align: center; /* Center-align the text */
     }
     #fintro ul {
         flex-direction: column;
