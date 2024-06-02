@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+    <link rel="stylesheet" href="Projects.css">
+</head>
+<body>
+    <button id="toggleNav">&#9776;</button>
+    <div class="projects">
+    <div class="box_parent">
+    <h2 class="heading">Projects</h2>  
+    <div class="box">
+        <div class="box1">
+            <h3>Book Finder Application</h3>
+            <div class="des">
+                <p>An application developed to enable the users get preferred books by searching based on authors, book titles or a keyword based on their interests.</p>
+                <p class="tech">Technologies Used:</p>
+                <ul class="list">
+                    <li><b>Google Books API</b></li>
+                    <li>Front-end of the application using HTML, CSS, JavaScript.</li>
+                    <li>API is used to retrieve the details of the available books.</li>
+                </ul>
+                <a href="https://pavani9104.github.io/Book-finder-application/" target="_blank">Click to View</a>
+            </div>
+        </div>
+        <div class="box2">
+            <h3>Relational Database for Food Delivery System</h3>
+            <div class="des">
+                <p>A database designed to manage the food deliveries between restaurants and customers with the help of delivery agents in various locations.</p>
+                <p class="tech">Developed:</p>
+                <ul class="list">
+                    <li>ER Model, Relational Model</li>
+                    <li>Database Relations Using <b>MySQL</b> </li>
+                    <li>Normalised Relational Dependencies</li>
+                </ul>
+                <a href="https://github.com/pavani9104/Relational-Database-Food-Delivery-System" target="_blank">Click to View</a>
+            </div>
+        </div>
+        <div class="box3">
+            <h3>Portfolio Website</h3>
+            <div class="des">
+                <p>A front-end Website developed to display my portfolio.</p>
+                <p class="tech">Technologies Used:</p>
+                <ul class="list">
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>HTML and CSS for page layouts and designs. <li>
+                    <li>JavaScript for basic transitions.</li>
+                </ul>
+                <a href="https://github.com/pavani9104/Portfolio-Website" target="_blank">Click to View</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="toggle" id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="ExtraCurr.html">ExtraCurriculars</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</div>
+<script>
+    document.getElementById('toggleNav').addEventListener('click', function() {
+    var nav = document.getElementById('navbar');
+    const butt=document.getElementById('toggleNav');
+    if (nav.style.display === 'block') {
+        nav.style.display = 'none';
+        butt.innerHTML='&#9776;';
+    } else {
+        nav.style.display = 'block';
+        butt.innerHTML='&times;';
+    }
+});
+</script>
+</body>
+</html>

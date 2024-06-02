@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skills</title>
+    <link rel="stylesheet" href="skills.css">
+</head>
+<body>
+    <button id="toggleNav">&#9776;</button>
+    <div class="skills">
+        <div class="box">
+            <h2 class="heading">Skills</h2>
+            <div class="allskills">
+                <div class="sk">
+                    <div class="h">
+                        C++
+                    </div>
+                    <div class="exp">
+                        Level: Advanced
+                    </div>
+                </div>
+                <div class="sk">
+                    <div class="h">
+                        JAVA
+                    </div>
+                    <div class="exp">
+                        Level: Advanced
+                    </div>
+                </div>
+                <div class="sk">
+                    <div class="h">
+                        C
+                    </div>
+                    <div class="exp">
+                        Level: Intermediate
+                    </div>
+                </div>
+                <div class="sk">
+                    <div class="h">
+                        Python
+                    </div>
+                    <div class="exp">
+                        Level: Basic
+                    </div>
+                </div>
+                <div class="sk">
+                    <div class="h">
+                        SQL
+                    </div>
+                    <div class="exp">
+                        Level: Proficient
+                    </div>
+                </div>
+                <div class="sk">
+                    <div class="h">
+                        HTML
+                    </div>
+                    <div class="exp">
+                        Level: Intermediate
+                    </div>
+                </div>
+                <div class="sk">
+                    <div class="h">
+                        CSS
+                    </div>
+                    <div class="exp">
+                        Level: Intermediate
+                    </div>
+                </div>
+                <div class="sk">
+                    <div class="h">
+                        JavaScript
+                    </div>
+                    <div class="exp">
+                        Level: Basic
+                    </div>
+                </div>
+                <div class="sk">
+                    <div class="h">
+                        R
+                    </div>
+                    <div class="exp">
+                        Level: Proficient
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="toggle" id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="ExtraCurr.html">ExtraCurriculars</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.getElementById('toggleNav').addEventListener('click', function() {
+        var nav = document.getElementById('navbar');
+        const butt=document.getElementById('toggleNav');
+        if (nav.style.display === 'block') {
+            nav.style.display = 'none';
+            butt.innerHTML='&#9776;';
+        } else {
+            nav.style.display = 'block';
+            butt.innerHTML='&times;';
+        }
+    });
+    </script>
+</body>
+</html>

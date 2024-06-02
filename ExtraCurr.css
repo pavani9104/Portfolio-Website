@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #dad3be;
+    line-height: 1.6;
+    font-size: 18px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.ExtraCurriculars {
+    max-width: 1200px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: #f1e5d1;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.flex_box {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.ex1, .ex2{
+    background-color: #dad3be;
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+}
+.ex1{
+    background-image: url("Images/nc_logo.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 20%;
+}
+.ex2{
+    background-image: url("Images/rotary.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 15%;
+}
+.ex1:hover, .ex2:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.position h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.position h4 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+#toggleNav {
+    display: none;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 999;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.toggle {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    background-color: #f1e5d1;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 0.5% 1% 0.5% 1%;
+}
+
+.toggle ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.toggle li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.toggle a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+.toggle a:hover {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+@media (max-width: 800px) {
+    .projects {
+        height: auto;
+    }
+
+    .box {
+        margin: 10px;
+        padding: 0.5rem;
+    }
+    #toggleNav {
+        display: block;
+    }
+    .flex_box{
+        flex-direction: column;
+    }
+    .toggle {
+        display: none;
+        height: fit-content;
+        position: fixed;
+        top: 5px;
+        right: 0px;
+        width: 50%;
+    }
+
+    .toggle ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .toggle li {
+        width: 100%;
+        margin: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+    .toggle a {
+        display: block;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <button id="toggleNav">&#9776;</button>
+    <div class="contact">
+        <div class="box">
+            <h2 class="heading">Connect With Us</h2>
+            <p>Feel free to reach out to me using the form below</p>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="2" required></textarea><br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="toggle" id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="ExtraCurr.html">ExtraCurriculars</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.getElementById('toggleNav').addEventListener('click', function() {
+        var nav = document.getElementById('navbar');
+        const butt=document.getElementById('toggleNav');
+        if (nav.style.display === 'block') {
+            nav.style.display = 'none';
+            butt.innerHTML='&#9776;';
+        } else {
+            nav.style.display = 'block';
+            butt.innerHTML='&times;';
+        }
+    });
+    </script>
+</body>
+</html>

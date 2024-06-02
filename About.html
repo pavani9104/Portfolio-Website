@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="About.css">
+</head>
+<body>
+    <button id="toggleNav">&#9776;</button>
+    <div class="about">
+        <div class="box">
+            <h2 class="heading">About</h2>
+            <ul>
+                <li>Hello!</li>
+                <li>I am <b>Obulapuram Sunitha Pavani</b></li>
+                <li>I am currently pursuing <b>B.Tech in Computer Science & Engineering</b> (2022-2026) at the National Institute of Technology, Warangal.</li>
+                <li>I am also pursuing a minor degree in Applied and Computational Mathematics.</li>
+                <li>I am interested in <b>Data Structures and Algorithms</b> and <b>Mathematics</b>. I am also exploring web development and found it interesting.</li>
+                <li>Explore my website to know more about me. It's a pleasure to connect with you.</p></li>
+            </ul>
+        </div>
+        <div class="toggle" id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="ExtraCurr.html">ExtraCurriculars</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.getElementById('toggleNav').addEventListener('click', function() {
+        var nav = document.getElementById('navbar');
+        const butt=document.getElementById('toggleNav');
+        if (nav.style.display === 'block') {
+            nav.style.display = 'none';
+            butt.innerHTML='&#9776;';
+        } else {
+            nav.style.display = 'block';
+            butt.innerHTML='&times;';
+        }
+    });
+    </script>
+</body>
+</html>

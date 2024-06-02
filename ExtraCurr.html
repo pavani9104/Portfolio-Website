@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExtraCurriculars</title>
+    <link rel="stylesheet" href="ExtraCurr.css">
+</head>
+<body>
+    <button id="toggleNav">&#9776;</button>
+    <div class="ExtraCurriculars">
+        <div class="box">
+            <h2 class="heading">ExtraCurriculars</h2>
+            <div class="flex_box">
+                <div class="ex1">
+                    <div class="position">
+                        <h3>Nature Club, NIT Warangal</h3>
+                        <h4>Executive Member</h4>
+                    </div>
+                    <p>At Nature Club, we conducted various events like plantation drives to protect the nature 
+                        and to spread awareness about nature among the students of the campus.</p>
+                    <p>We also celebrated several cultural events to make the students experience our culture and heritage.</p>
+                </div>
+                <div class="ex2">
+                    <div class="position">
+                        <h3>Rotary Club</h3>
+                        <h4>Volunteer</h4>
+                    </div>
+                    
+                    <p>I worked as Volunteer for Rotary Club to raise funds by door-to-door outreach.</p>
+                    <p>They use these funds to support patients suffering from dreadful diseases like polio.</p>
+                </div>
+            </div>
+        </div>
+        <div class="toggle" id="navbar">
+            <ul>
+                
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.getElementById('toggleNav').addEventListener('click', function() {
+        var nav = document.getElementById('navbar');
+        const butt=document.getElementById('toggleNav');
+        if (nav.style.display === 'block') {
+            nav.style.display = 'none';
+            butt.innerHTML='&#9776;';
+        } else {
+            nav.style.display = 'block';
+            butt.innerHTML='&times;';
+        }
+    });
+    </script>
+</body>
+</html>
