@@ -181,7 +181,6 @@ body {
     text-align: center;
     width: 100%;
     font-size: 20px;
-    z-index: 1001;
 }
 
 #contact ul {
@@ -207,7 +206,6 @@ body {
     position: fixed;
     top: 2rem;
     right: 2rem;
-    z-index: 999;
     background: none;
     border: none;
     font-size: 24px;
